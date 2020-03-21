@@ -29,6 +29,6 @@ public class Report {
 
     public void setHeader(ReportHeader header) {
         this.header = header;
-        footer.PrintReport();
+        header.PrintReport();
     }
 }
