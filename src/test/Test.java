@@ -1,7 +1,11 @@
 package test;
 
+import facade.ReportGeneratorFecade;
+import facade.ReportType;
+
 public class Test {
     public static void main(String[] args){
-        System.out.println("hello");
+        ReportGeneratorFecade.reportGenerator(ReportType.PDF);
+        ReportGeneratorFecade.reportGenerator(ReportType.HTML);
     }
 }
